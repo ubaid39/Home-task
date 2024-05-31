@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE company [
+    <!ELEMENT company (employee+, client?)>
+    <!ELEMENT employee (name, (email | number), password)>
+    <!ELEMENT client (name, email, password)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT number (#PCDATA)>
+    <!ELEMENT password (#PCDATA)>
+]>
+
+<company>
+    <employee>
+        <name>UBAID</name>
+        <email>UBAID@gmail.com</email>
+        <password>1234</password>
+    </employee>
+    <employee>
+        <name>Ali</name>
+        <number>000123456</number>
+        <password>1122</password>
+    </employee>
+    <client>
+        <name>umer</name>
+        <email >umer@gmail.com.com</email>
+        <password>3322</password>
+    </client>
+</company>
